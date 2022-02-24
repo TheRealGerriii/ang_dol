@@ -1,3 +1,12 @@
+/*
+* File: lista.component.ts
+* Author: Hermányi Gergely
+* Copyright: 2022, Hermányi Gergely
+* Group: Szoft-II-N
+* Date: 2022-02-24
+* Github: https://github.com/TheRealGerriii
+* Licenc: GNU GPL
+*/
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
