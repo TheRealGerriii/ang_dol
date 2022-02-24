@@ -1,0 +1,30 @@
+<!-- /*
+* File: register.component.html
+* Author: Hermányi Gergely
+* Copyright: 2022, Hermányi Gergely
+* Group: Szoft-II-N
+* Date: 2022-02-24
+* Github: https://github.com/TheRealGerriii
+* Licenc: GNU GPL
+*/ -->
+<p>register works!</p>
+
+<form [formGroup]="registerForm" (ngSubmit)="register()">
+    <div class="mb-3">
+      <label for="exampleInputUsername1" class="form-label">Felhasználónév</label>
+      <input type="text" class="form-control" id="exampleInputUsername1" aria-describedby="emailHelp" formControlName="user">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email cím</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+      </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Jelszó</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword2" class="form-label">Jelszó újra</label>
+      <input type="password" class="form-control" id="exampleInputPassword2" formControlName="password2">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
